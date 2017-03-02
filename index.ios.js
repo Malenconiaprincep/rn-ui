@@ -4,14 +4,7 @@ import { AppRegistry, NavigatorIOS, Text, View, TouchableHighlight } from 'react
 export default class NavigatorIOSApp extends Component {
   render() {
     return (
-      <NavigatorIOS
-        initialRoute={{
-          component: MyScene,
-          title: 'My Initial Scene',
-          passProps: { myProp: 'foo' }
-        }}
-        style={{flex: 1}}
-      />
+      <View><Text>HELLO WORLD</Text></View>
     );
   }
 }
@@ -41,9 +34,9 @@ class MyScene extends Component {
   render() {
     return (
       <View>
-        <Text>Current Scene: { this.props.title }</Text>
+        <Text>Current Scene111: { this.props.title }</Text>
         <TouchableHighlight onPress={this._onForward}>
-          <Text>Tap me to load the next scene</Text>
+          <Text>1111Tap me to load the next scene</Text>
         </TouchableHighlight>
       </View>
     )
